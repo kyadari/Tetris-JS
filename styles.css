@@ -1,0 +1,132 @@
+:root {
+    font-size: 16px;
+    font-family: "Open Sans";
+    /* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
+    background-image: linear-gradient(-225deg, #2cd8d5 0%, #c5c1ff 56%, #ffbac3 100%);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100vh;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: 20px;
+}
+
+.gameOver {
+    color: red;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 600px;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.start.tetromino {
+    background-color: transparent !important;
+}
+
+.start {
+    visibility: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.play {
+    display: flex;
+    flex-wrap: wrap;
+    border-style: groove;
+    border-width: medium;
+    border-radius: 7px;
+}
+
+.tetromino {
+    box-shadow: inset 1px 2px 1px 1px rgba(255, 255, 255, 0.6);
+    border-radius: 3px;
+}
+
+.mini-grid {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 65px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.mini-grid div {
+    height: 25px;
+    width: 25px;
+}
+
+h3 {
+    text-align: center;
+    color: darkgray;
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.result {
+    background: aliceblue;
+    margin-left: 30px;
+    width: 200px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+p {
+    font-size: 42px;
+    color: darkgray;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+button {
+    height: 40px;
+    align-content: center;
+    width: 160px;
+    align-self: center;
+    border-radius: 5px;
+    outline: none;
+    background: #c5c1ff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #443e7e;
+    box-shadow: 4px 6px 12px -1px #828282;
+    transform: scale(1.05);
+    transition-duration: .3s;
+}
